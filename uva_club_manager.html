@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>UVA Club Manager - Shawn Malik's Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!-- Include your CSS files -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+    <!-- Include the Marked.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/marked@4.3.0/marked.min.js"></script>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">Back to Portfolio</a>
+        </header>
+
+        <!-- Main Content -->
+        <div id="main">
+            <!-- StatZone Project Description -->
+            <article class="post">
+                <div id="markdown-content">
+                    <!-- Markdown will be rendered here -->
+                </div>
+            </article>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/shawn-malik24/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/shawnmalik1/" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+            <ul>
+                <li>&copy; Shawn Malik</li>
+                <li>All Rights Reserved</li>
+            </ul>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Commented out other scripts for testing -->
+    <!-- <script src="assets/js/jquery.min.js"></script> -->
+    <!-- <script src="assets/js/jquery.scrollex.min.js"></script> -->
+    <!-- <script src="assets/js/jquery.scrolly.min.js"></script> -->
+    <!-- <script src="assets/js/browser.min.js"></script> -->
+    <!-- <script src="assets/js/breakpoints.min.js"></script> -->
+    <!-- <script src="assets/js/util.js"></script> -->
+    <!-- <script src="assets/js/main.js"></script> -->
+
+    <!-- Render Markdown -->
+    <script>
+        window.onload = function() {
+            const markdownContent = String.raw`            
+# UVA Club Manager! 👨‍🎓
+
+UVA Club Manager is a Saas that allows students to manage an organization/club. It features built-in features such as an Event Calendar, AWS File Upload, Task Creation for members, Secure Google Auth Login, and more.
+
+Our project can be found here: https://a11-application-e8dd308d0fa2.herokuapp.com/
+
+GitHub Repo: https://github.com/shawnmalik1/UVA-Club-Manager
+
+
+## Description 🎓
+
+UVA Club Manager has many capabilities and features you can use.
+- **Secure Google Auth Login**: Secure Google Login to prevent unauthorized users from viewing your organizational information.
+- **Event Calandar**: Synched LIVE calendar that users and admins can see to view upcoming scheduled organizational events
+- **Your Events**: Page where users can see all events they're a part of. They can upload files, assign tasks for the event, or join/leave the event.
+- **Live Chat**: Live Chat for users on the application.
+- **Point System**: Users can earn points by completing tasks assigned with events.
+
+
+## Technologies 🖥️
+UVA Club Manager was developed using the following technologies:
+- Django
+- AWS S3
+- Heroku
+- Bootstrap
+- Google Auth
+- Postgre SQL
+
+
+## License 📝
+
+This project is licensed under the [MIT License](./LICENSE)
+
+            `;
+
+            // Render the markdown content into HTML and insert it into the page
+            document.getElementById('markdown-content').innerHTML = marked.parse(markdownContent);
+        };
+    </script>
+</body>
+</html>
