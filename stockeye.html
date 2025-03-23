@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Color Memory! - Shawn Malik's Portfolio</title>
+    <title>StockEye - Shawn Malik's Portfolio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -48,23 +48,35 @@
     <script>
         window.onload = function() {
             const markdownContent = String.raw`
-# Color Memory! 🧠
+# StockEye 📈👁️
+StockEye is a stock price predictor that uses machine learning to predict the short-term success of a given stock. 
 
-Color Memory! is an interactive game that tests users reflexes and measures their response times in clicking a series of buttons. 
-It features a leaderboard that tracks your highest score so that you can strive to acheive new personal bests.
+StockEye uses historical data from the past 10 years to train its model.
 
-<video width="560" height="315" controls>
-    <source src="https://github.com/user-attachments/assets/8e8aa24c-be3a-4bb9-856b-aa5eb5519079">
-    Your browser does not support the video tag.
-</video>
+## Description 🔮
+StockEye allows the user to input a stock ticker, fetching historical stock data from Yahoo Finance via the yfinance library, and  calculating rolling averages (50-day and 200-day SMAs) for feature engineering. 
+A linear regression model is trained on these features to predict the following day’s closing price. 
+The script also provides a short-term forecast (10 days) by iteratively updating and recalculating the SMAs. 
 
+StockEye provides the user with an intuitive and interactive graph of the predicted closing prices for the near future.
 
+## Technologies 🖥️
+- Python
+- Pandas & NumPy
+- yfinance
+- scikit-learn
+- matplotlib
 
-## Technologies Used 👨‍💻
-- Built with XCode and Swift Programming Language
-
-## Authors
+## Authors ✍️
 - Developed by Shawn Malik
+
+## GitHub Repo:
+https://github.com/shawnmalik1/StockEye
+
+## License 📝
+
+This project is licensed under the [MIT License](./LICENSE)
+
             `;
 
             document.getElementById('markdown-content').innerHTML = marked.parse(markdownContent);
