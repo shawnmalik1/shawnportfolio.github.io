@@ -4743,23 +4743,31 @@ input, select, textarea {
 		gap: 10px;
 		list-style: none;
 		padding-left: 0;
+		margin-bottom: 2rem;
 	  }
 	  
 	  .skills-list li {
-		background: #18bfef;
-		color: #fff;
+		font-weight: bold;
 		padding: 0.5rem 1rem;
 		border-radius: 5px;
-		font-weight: bold;
-		cursor: pointer;
+		cursor: default;
 		transition: all 0.2s ease-in-out;
 		box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 	  }
 	  
-	  .skills-list li:hover {
-		background: #13a9d7;
-		box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-		transform: translateY(-2px);
+	  /* Different colors */
+	  .skills-list.languages li {
+		background-color: #18bfef;
+		color: #fff;
 	  }
 	  
+	  .skills-list.tools li {
+		background-color: #2ecc71;
+		color: #fff;
+	  }
+	  
+	  .skills-list li:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+	  }
 	  
