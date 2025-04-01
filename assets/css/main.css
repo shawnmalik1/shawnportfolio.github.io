@@ -4712,3 +4712,44 @@ input, select, textarea {
 		}
 
 	}
+	#experience, #skills {
+		padding: 2rem 2rem;
+		color: #000000;
+	  }
+	  
+	  #experience h2, #skills h2 {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	  }
+	  #experience h3 {
+		font-size: 1.2rem;
+		font-weight: 600;
+		margin-bottom: 0.5rem;
+	  }
+	  #experience p {
+		margin-bottom: 0.5rem;
+	  }
+	  #experience ul {
+		margin-top: 0.5rem;
+	  }
+	  
+	  .job {
+		margin-bottom: 2rem;
+	  }
+	  
+	  .skills-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+		list-style: none;
+		padding-left: 0;
+	  }
+	  
+	  .skills-list li {
+		background: #18bfef;
+		color: #fff;
+		padding: 0.5rem 1rem;
+		border-radius: 5px;
+		font-weight: bold;
+	  }
+	  
