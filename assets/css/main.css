@@ -3789,7 +3789,7 @@ input, select, textarea {
 		}
 
 		#main > .post {
-			padding: 8rem 8rem 6rem 8rem ;
+			padding: 4rem 2rem 2rem 2rem ;
 		}
 
 			#main > .post header.major > .date {
@@ -4751,5 +4751,15 @@ input, select, textarea {
 		padding: 0.5rem 1rem;
 		border-radius: 5px;
 		font-weight: bold;
+		cursor: pointer;
+		transition: all 0.2s ease-in-out;
+		box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 	  }
+	  
+	  .skills-list li:hover {
+		background: #13a9d7;
+		box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+		transform: translateY(-2px);
+	  }
+	  
 	  
