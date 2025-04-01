@@ -3789,7 +3789,7 @@ input, select, textarea {
 		}
 
 		#main > .post {
-			padding: 8rem 8rem 6rem 8rem ;
+			padding: 4rem 2rem 2rem 2rem ;
 		}
 
 			#main > .post header.major > .date {
@@ -4712,3 +4712,62 @@ input, select, textarea {
 		}
 
 	}
+	#experience, #skills {
+		padding: 2rem 2rem;
+		color: #000000;
+	  }
+	  
+	  #experience h2, #skills h2 {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	  }
+	  #experience h3 {
+		font-size: 1.2rem;
+		font-weight: 600;
+		margin-bottom: 0.5rem;
+	  }
+	  #experience p {
+		margin-bottom: 0.5rem;
+	  }
+	  #experience ul {
+		margin-top: 0.5rem;
+	  }
+	  
+	  .job {
+		margin-bottom: 2rem;
+	  }
+	  
+	  .skills-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+		list-style: none;
+		padding-left: 0;
+		margin-bottom: 2rem;
+	  }
+	  
+	  .skills-list li {
+		font-weight: bold;
+		padding: 0.5rem 1rem;
+		border-radius: 5px;
+		cursor: default;
+		transition: all 0.2s ease-in-out;
+		box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	  }
+	  
+	  /* Different colors */
+	  .skills-list.languages li {
+		background-color: #18bfef;
+		color: #fff;
+	  }
+	  
+	  .skills-list.tools li {
+		background-color: #2ecc71;
+		color: #fff;
+	  }
+	  
+	  .skills-list li:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+	  }
+	  
