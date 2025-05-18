@@ -2626,10 +2626,16 @@ input, select, textarea {
 		#main > .post.featured .image.main img {
 			max-height: 420px;
 			width: auto;
-			display: block;
+			display: flex;
+			justify-content: center;
 			margin-left: auto;
 			margin-right: auto;
 			object-fit: cover;
+		  }
+		  #main > .post.featured .image.main img {
+			width: auto;     
+			max-width: 100%;
+			height: auto;
 		  }
 
 			.image.fit:first-child {
