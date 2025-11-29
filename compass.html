@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Compass - Shawn Malik's Portfolio</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <!-- Include your CSS files -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+      <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+    <script src="https://cdn.jsdelivr.net/npm/marked@4.3.0/marked.min.js"></script>
+  </head>
+  <body class="is-preload">
+    <div id="wrapper" class="fade-in">
+      <header id="header">
+        <a href="index.html" class="logo">Back to Portfolio</a>
+      </header>
+
+      <div id="main">
+        <article class="post">
+          <div id="markdown-content"></div>
+        </article>
+      </div>
+
+      <footer id="footer">
+        <ul class="icons">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/shawn-malik24/"
+              class="icon brands fa-linkedin"
+              ><span class="label">LinkedIn</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/shawnmalik1/"
+              class="icon brands fa-github"
+              ><span class="label">GitHub</span></a
+            >
+          </li>
+        </ul>
+        <ul>
+          <li>&copy; Shawn Malik</li>
+          <li>All Rights Reserved</li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+      window.onload = function () {
+        const markdownContent = String.raw`
+# Compass – Granular Knowledge Map
+
+Compass blends two complementary views of knowledge: an interactive map that lets you zoom from 40 coarse to 200 fine NYT news topics, and a document-intelligence workflow that embeds your own writing to find relevant reporting, insights, and citations. A FastAPI + Python pipeline creates the clustered map from a Kaggle dataset while a Node/Express service pairs uploads with OpenAI-powered analysis and citations.
+
+## Why it matters
+- **Accelerate research.** Jump from a broad beat—like Health—into specific subtopics such as Stem Cell Therapy in seconds.
+- **Power student projects.** Drop in a draft or summary to instantly retrieve matching NYT coverage and ready-to-use APA citations.
+- **Focus on ideas, not noise.** When you enter a cluster, the surrounding map fades so you can inspect the inner structure without distractions.
+
+## Core capabilities
+- 📍 **Hierarchical topic map** – D3 renders exploded “subtopic orbits” for clarity as you zoom into fine clusters.
+- 🔍 **Semantic search** – Shared SentenceTransformer embeddings let you query by idea instead of rigid keywords.
+- ✍️ **Document + PDF drop-in** – Upload or paste text; the backend places it inside the nearest cluster and surfaces the closest NYT articles.
+- 🏷️ **AI-assisted naming** – OpenAI polishes cluster names so topics read like real research angles.
+- 🧾 **APA citations on demand** – Each article ships with a Cite button that asks GPT-4o mini for a formatted reference.
+- 🧠 **Research-first UX** – Focus mode hides unrelated bubbles, tooltips summarize subtopics, and the sidebar pivots between search, cluster deep dives, and upload insights.
+
+Instead of endlessly scrolling feeds, Compass visualizes how ideas relate, lets you drill into subtopics, and shows where your own writing lands in the knowledge graph—all while generating trustworthy citations that speed up research.
+
+Check out our GitHub repo for more details: [https://github.com/shawnmalik1/Compass]
+            `;
+
+        document.getElementById("markdown-content").innerHTML =
+          marked.parse(markdownContent);
+      };
+    </script>
+  </body>
+</html>
