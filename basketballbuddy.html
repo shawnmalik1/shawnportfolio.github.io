@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BasketballBuddy - Shawn Malik's Portfolio</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <!-- Include your CSS files -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+      <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+    <!-- Include the Marked.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/marked@4.3.0/marked.min.js"></script>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+      <!-- Header -->
+      <header id="header">
+        <a href="index.html" class="logo">Back to Portfolio</a>
+      </header>
+
+      <!-- Main Content -->
+      <div id="main">
+        <!-- BasketballBuddy Project Description -->
+        <article class="post">
+          <div id="markdown-content">
+            <!-- Markdown will be rendered here -->
+          </div>
+        </article>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="icons">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/shawn-malik24/"
+              class="icon brands fa-linkedin"
+              ><span class="label">LinkedIn</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/shawnmalik1/"
+              class="icon brands fa-github"
+              ><span class="label">GitHub</span></a
+            >
+          </li>
+        </ul>
+        <ul>
+          <li>&copy; Shawn Malik</li>
+          <li>All Rights Reserved</li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Render Markdown -->
+    <script>
+      window.onload = function () {
+        const markdownContent = String.raw`
+# BasketballBuddy 🏀 💼
+
+BasketballBuddy is an NBA Front Office Analytics platform designed as a **front office assistant**, helping teams assess strengths and weaknesses, identify roster needs, and find optimal trade targets through data-driven analysis.
+
+## Features
+
+BasketballBuddy provides powerful tools for NBA front office decision-making:
+
+- **Team Performance Analysis**: Evaluates 17+ statistical categories across the league to give you a comprehensive view of team performance.
+- **Needs Identification**: Automatically flags team deficiencies based on league-wide rankings, categorizing needs as Critical (ranks 25-30), High (20-24), or Medium (15-19).
+- **Trade Recommendations**: Player suggestions tailored to your team's specific requirements, with a Fit Score to evaluate potential impact.
+- **Roster Management Tools**: Complete team finance views with full salary and contract information.
+- **Live Data Integration**: Updates directly from official NBA statistics sources.
+
+## How It Works
+
+The platform ranks teams across metrics like shooting efficiency, rebounding, and defensive performance. Teams in the bottom third trigger need alerts with priority levels.
+
+Trade candidates receive a **Fit Score (0-100)** factoring in:
+- Skill alignment with team needs
+- Age and contract status
+- Impact metrics using DARKO's DPM ratings
+
+The system distinguishes a player's trade availability into three tiers:
+- **Unlikely**: Franchise stars
+- **Likely**: Veterans on rebuilding teams
+- **Possibly**: Everyone else
+
+## Technologies
+
+BasketballBuddy was built using these web technologies:
+- Next.js 16
+- React 19
+- TypeScript 5
+- Tailwind CSS 4
+- NBA Stats API Integration
+
+## Access the site
+
+Check out the live application: [basketballbuddy.vercel.app](https://basketballbuddy.vercel.app/)
+
+## Author
+
+- Developed by Shawn Malik
+
+## License
+
+This project is licensed under the [MIT License](./LICENSE).
+
+## GitHub Link:
+https://github.com/shawnmalik1/BasketballBuddy
+
+            `;
+
+        // Render the markdown content into HTML and insert it into the page
+        document.getElementById("markdown-content").innerHTML =
+          marked.parse(markdownContent);
+      };
+    </script>
+  </body>
+</html>
